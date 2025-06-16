@@ -1091,3 +1091,318 @@
   width: 85%;
   height: auto;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 1200px) {
+    .solution-content {
+        padding: 0 30px;
+    }
+
+    .solution-text h1 {
+        font-size: 2rem;
+    }
+
+    .telcos-problems-section {
+        padding: 0 40px 40px 40px;
+    }
+
+    .problems-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .solution-section {
+        padding: 40px 0 30px 0;
+    }
+
+    .solution-content {
+        gap: 30px;
+    }
+
+    .solution-text {
+        min-width: 280px;
+    }
+
+    .solution-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .solution-text p {
+        font-size: 1rem;
+    }
+
+    .telcos-hero-overlay h1 {
+        font-size: 2.2rem;
+    }
+
+    .telcos-hero-overlay p {
+        font-size: 1.1rem;
+    }
+
+    .telcos-problems-section {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 30px 30px 30px;
+    }
+
+    .problems-left,
+    .problems-right {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .problems-img {
+        max-width: 100%;
+    }
+
+    .benefits-left,
+    .benefits-right {
+        min-width: 100%;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .testimonial-left,
+    .testimonial-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .solution-section {
+        padding: 30px 0 20px 0;
+    }
+
+    .solution-content {
+        padding: 0 20px;
+    }
+
+    .solution-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .solution-subtitle {
+        font-size: 1rem;
+    }
+
+    .discover-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .telcos-hero {
+        max-height: 500px;
+    }
+
+    .telcos-hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .telcos-hero-overlay p {
+        font-size: 1rem;
+    }
+
+    .telcos-problems-section {
+        margin: 40px auto 20px auto;
+        padding: 0 20px 20px 20px;
+    }
+
+    .problems-label {
+        font-size: 0.9rem;
+    }
+
+    .problems-title {
+        font-size: 1.5rem;
+    }
+
+    .accordion-item {
+        border-radius: 16px;
+    }
+
+    .accordion-header {
+        padding: 15px;
+    }
+
+    .accordion-body {
+        padding: 15px;
+    }
+
+    .benefits-form {
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 1.3rem;
+    }
+
+    .benefits-helpbox {
+        padding: 20px;
+    }
+
+    .helpbox-title {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-title {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .faq-title {
+        font-size: 1.5rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .solution-section {
+        padding: 20px 0 15px 0;
+    }
+
+    .solution-content {
+        padding: 0 15px;
+    }
+
+    .solution-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .solution-text p {
+        font-size: 0.95rem;
+    }
+
+    .solution-text ul li {
+        font-size: 0.9rem;
+    }
+
+    .telcos-hero {
+        max-height: 400px;
+    }
+
+    .telcos-hero-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .telcos-hero-overlay p {
+        font-size: 0.95rem;
+    }
+
+    .telcos-problems-section {
+        margin: 30px auto 15px auto;
+        padding: 0 15px 15px 15px;
+    }
+
+    .problems-label {
+        font-size: 0.85rem;
+    }
+
+    .problems-title {
+        font-size: 1.3rem;
+    }
+
+    .problems-underline .dots {
+        font-size: 1.3rem;
+    }
+
+    .problems-underline .line {
+        width: 35px;
+    }
+
+    .accordion-header {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .accordion-body {
+        padding: 12px;
+    }
+
+    .accordion-body ul li {
+        font-size: 0.9rem;
+    }
+
+    .benefits-form {
+        padding: 15px;
+    }
+
+    .form-title {
+        font-size: 1.2rem;
+    }
+
+    .form-desc {
+        font-size: 0.9rem;
+    }
+
+    .benefits-form input,
+    .benefits-form textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .benefits-form button {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .benefits-helpbox {
+        padding: 15px;
+    }
+
+    .helpbox-title {
+        font-size: 1.1rem;
+    }
+
+    .helpbox-desc {
+        font-size: 0.9rem;
+    }
+
+    .helpbox-contact {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-title {
+        font-size: 1.3rem;
+    }
+
+    .testimonial-desc {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .testimonial-card-author {
+        font-size: 0.9rem;
+    }
+
+    .faq-title {
+        font-size: 1.3rem;
+    }
+
+    .faq-desc {
+        font-size: 0.9rem;
+    }
+
+    .faq-question {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}

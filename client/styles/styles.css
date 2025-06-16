@@ -1944,3 +1944,370 @@ body {
   font-size: 1rem;
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 1200px) {
+    .who-we-are-section {
+        padding: 60px 0 40px 0;
+    }
+
+    .who-left {
+        margin-left: 5vw;
+    }
+
+    .who-right {
+        margin-right: 5vw;
+    }
+
+    .who-image-container {
+        width: 400px;
+        height: 480px;
+    }
+
+    .who-image {
+        width: 480px;
+        height: 480px;
+    }
+
+    .who-experience {
+        width: 140px;
+        height: 140px;
+    }
+
+    .who-exp-number {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .who-we-are-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .who-left {
+        margin: 0 auto 40px;
+        max-width: 100%;
+    }
+
+    .who-right {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .who-experience {
+        position: relative;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .who-image-container {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .who-image {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 120px 120px;
+    }
+
+    .who-badge {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .features-bar {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .feature {
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1.5px solid #eee;
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .who-title {
+        font-size: 2.2rem;
+    }
+
+    .who-desc {
+        font-size: 1rem;
+    }
+
+    .who-btn {
+        padding: 14px 30px;
+        font-size: 0.9rem;
+    }
+
+    .who-badge {
+        min-width: 180px;
+        padding: 14px 18px;
+    }
+
+    .who-subscribers {
+        padding: 6px 12px;
+    }
+
+    .client-trust-section {
+        padding: 40px 20px;
+    }
+
+    .client-trust-title {
+        font-size: 1.8rem;
+    }
+
+    .client-stats {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .who-title {
+        font-size: 1.8rem;
+    }
+
+    .who-subtitle {
+        font-size: 14px;
+    }
+
+    .who-desc {
+        font-size: 0.95rem;
+    }
+
+    .who-btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .who-experience {
+        width: 120px;
+        height: 120px;
+    }
+
+    .who-exp-number {
+        font-size: 2.4rem;
+    }
+
+    .who-exp-text {
+        font-size: 1rem;
+    }
+
+    .who-badge {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 20px auto;
+    }
+
+    .who-subscribers {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        margin: 20px auto;
+    }
+
+    .features-bar {
+        width: 95vw;
+    }
+
+    .feature {
+        padding: 15px;
+    }
+
+    .feature-title {
+        font-size: 1.1rem;
+    }
+
+    .feature-desc {
+        font-size: 0.9rem;
+    }
+
+    .client-trust-title {
+        font-size: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Add viewport meta tag reminder */
+/* Add this in your HTML head: <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+/* --- HOMEPAGE FULL MOBILE RESPONSIVENESS ENHANCEMENTS --- */
+@media (max-width: 768px) {
+  .solution-section, .solutions-grid-section, .tech-spec-section, .experience-section, .benefit-section {
+    padding: 20px 0 !important;
+  }
+  .solution-content, .solutions-grid-header, .tech-spec-left, .tech-spec-right, .benefit-container, .experience-cards {
+    padding: 0 10px !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .features-bar {
+    flex-direction: column;
+    width: 98vw;
+    margin: 16px auto 0 auto;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .feature, .feature-highlight {
+    border-right: none !important;
+    border-bottom: 1.5px solid #eee;
+    padding: 18px 10px;
+  }
+  .feature:last-child, .feature-highlight:last-child {
+    border-bottom: none;
+  }
+  .who-we-are-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  .who-left, .who-right {
+    margin: 0 auto 20px;
+    max-width: 100%;
+    align-items: center;
+  }
+  .who-image-container {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+  .who-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 60px 60px;
+  }
+  .client-trust-section {
+    padding: 20px 0 10px 0;
+  }
+  .client-stats {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .solutions-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .solution-tab {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .tech-spec-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .tech-spec-left, .tech-spec-right {
+    margin: 0;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .tech-spec-image img {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+  }
+  .tech-spec-card {
+    min-width: 0;
+    padding: 18px 10px;
+  }
+  .experience-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .experience-card {
+    width: 98vw;
+    max-width: 320px;
+  }
+  .benefit-section {
+    flex-direction: column;
+    min-height: unset;
+    padding: 20px 0 !important;
+  }
+  .benefit-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .benefit-image-col, .benefit-content-col {
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .benefit-image {
+    max-width: 180px;
+    min-height: unset;
+  }
+}
+@media (max-width: 576px) {
+  .solution-section, .solutions-grid-section, .tech-spec-section, .experience-section, .benefit-section {
+    padding: 10px 0 !important;
+  }
+  .solution-content, .solutions-grid-header, .tech-spec-left, .tech-spec-right, .benefit-container, .experience-cards {
+    padding: 0 4px !important;
+  }
+  .who-title, .solutions-grid-title, .tech-spec-title, .experience-title, .benefit-title {
+    font-size: 1.2rem !important;
+  }
+  .who-desc, .solutions-grid-desc, .tech-spec-desc, .experience-card-desc, .benefit-desc {
+    font-size: 0.95rem !important;
+  }
+  .feature-icon img {
+    width: 32px;
+    height: 32px;
+  }
+  .client-trust-title, .solutions-grid-title, .tech-spec-title, .experience-title, .benefit-title {
+    font-size: 1.1rem !important;
+  }
+  .solutions-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  .solution-tab {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 0;
+  }
+  .tech-spec-image img {
+    max-width: 120px;
+  }
+  .experience-card {
+    max-width: 98vw;
+    padding: 8px 2px;
+  }
+  .benefit-image {
+    max-width: 120px;
+  }
+  .footer-section, .footer-container {
+    padding: 0 4px !important;
+  }
+}
+

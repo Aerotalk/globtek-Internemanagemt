@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Globetek Header Clone</title>
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/header.css" />
@@ -30,6 +31,11 @@
             class="logo-img"
           />
         </a>
+      </div>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <div class="nav-section">
         <nav>
@@ -113,6 +119,37 @@
           </ul>
         </nav>
       </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="../pages/about-us-globetek.html">About Us</a></li>
+        <li><a href="../pages/solutions/internet-management-for-telcos-isp-bsp-msp.html">Telcos, ISPs, BSPs & MSPs</a></li>
+        <li><a href="../pages/solutions/internet-management-for-hotels-resorts.html">Hotel & Resorts</a></li>
+        <li><a href="../pages/solutions/internet-management-for-airports-transport-station.html">Airports & Railway Stations</a></li>
+        <li><a href="../pages/solutions/internet-management-for-bank-ites.html">Bank & ITES</a></li>
+        <li><a href="../pages/solutions/internet-management-for-hospitals.html">Single & Multi-chain Hospitals</a></li>
+        <li><a href="../pages/solutions/internet-management-for-educational-institutions.html">Educational Institutions</a></li>
+        <li><a href="../pages/solutions/internet-management-for-smart-cities.html">Hotspots for Smart Cities</a></li>
+        <li><a href="../pages/solutions/internet-management-for-stadium-and-shopping-mall.html">Shopping Mall & Stadiums</a></li>
+        <li><a href="../pages/solutions/internet-management-for-restaurant-cafes.html">Restaurants & Clubs</a></li>
+        <li><a href="../pages/solutions/internet-management-for-stock-exchanges-space-research-center-defence-sectors-and-courts.html">Stock Exchanges, Defense Sectors and Courts</a></li>
+        <li><a href="../pages/solutions/internet-management-for-religious-institutions-events.html">Religious Institutions & Events</a></li>
+        <li><a href="../pages/solutions/internet-management-for-housing-complex-service-apartments.html">Housing Complex & Service Apartments</a></li>
+        <li><a href="partner-portal-globetek.html">Partner portal</a></li>
+        <li><a href="our-clientele-globetek.html">Our Clientele</a></li>
+        <li><a href="case-study-globetek.html">Case Study</a></li>
+        <li><a href="events-globetek.html">Events</a></li>
+        <li>
+          <button
+            class="sales-btn"
+            onclick="window.location.href='contact-us-globetek.html'"
+          >
+            TALK TO SALES
+          </button>
+        </li>
+      </ul>
     </div>
 
     <!-- New Section: All-in-One Solution for Internet Management -->
@@ -285,7 +322,7 @@
     <div class="solutions-grid-section">
       <div class="solutions-grid-header">
         <img
-          src="https://i.ibb.co/4Vw9Zgk/24online-solutions.png"
+          src="../assets/HTML Photos/home-images/24online-logo.png"
           alt="24Online Logo"
           class="solutions-grid-logo"
         />
@@ -885,5 +922,37 @@
     <!-- End Footer Section -->
 
     <script src="../script/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const body = document.body;
+
+        hamburger.addEventListener('click', function() {
+          this.classList.toggle('active');
+          mobileNav.classList.toggle('active');
+          body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileNav.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            body.style.overflow = '';
+          });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+          if (!hamburger.contains(event.target) && !mobileNav.contains(event.target)) {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            body.style.overflow = '';
+          }
+        });
+      });
+    </script>
   </body>
 </html>

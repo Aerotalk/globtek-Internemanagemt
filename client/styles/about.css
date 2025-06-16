@@ -20,6 +20,7 @@
   text-align: center;
   color: #fff;
   width: 100%;
+  transition: transform 0.3s ease;
 }
 .about-hero-content h1 {
   font-size: 3.2rem; /* 4rem - 20% = 3.2rem */
@@ -57,4 +58,120 @@
   color: #232b39;
   font-size: 2.1rem; /* 3rem * 0.7 */
   margin: 0 0 28px 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1200px) {
+    .about-hero {
+        min-height: 500px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-hero-content p {
+        font-size: 1.4rem;
+    }
+
+    .about-journey-section {
+        padding: 40px 0 20px 0;
+    }
+
+    .about-journey-title {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-hero {
+        min-height: 450px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 2.4rem;
+        margin-bottom: 15px;
+    }
+
+    .about-hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .about-journey-section {
+        padding: 36px 0 18px 0;
+    }
+
+    .about-journey-label {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .about-journey-title {
+        font-size: 1.7rem;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        min-height: 400px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+    }
+
+    .about-hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .about-journey-section {
+        padding: 32px 0 16px 0;
+    }
+
+    .about-journey-label {
+        font-size: 0.75rem;
+        margin-bottom: 8px;
+    }
+
+    .about-journey-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-hero {
+        min-height: 350px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .about-hero-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .about-journey-section {
+        padding: 28px 0 14px 0;
+    }
+
+    .about-journey-label {
+        font-size: 0.7rem;
+        margin-bottom: 6px;
+    }
+
+    .about-journey-title {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+        padding: 0 15px;
+    }
+}
+
+.about-hero:hover .about-hero-content {
+    transform: scale(1.02);
 }
