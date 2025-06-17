@@ -1,16 +1,55 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+  // Hamburger menu and mobile nav logic for all pages
+  const hamburger = document.querySelector('.hamburger-menu');
+  const mobileNav = document.querySelector('.mobile-nav');
+  const body = document.body;
+
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      this.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+      console.log('Hamburger clicked. Classes toggled:', {
+        hamburger: this.classList.contains('active'),
+        mobileNav: mobileNav.classList.contains('active'),
+      });
+      body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close mobile menu when clicking on a link
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileNav.classList.remove('active');
+        body.style.overflow = '';
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function (event) {
+      if (
+        !hamburger.contains(event.target) &&
+        !mobileNav.contains(event.target)
+      ) {
+        hamburger.classList.remove('active');
+        mobileNav.classList.remove('active');
+        body.style.overflow = '';
+      }
+    });
+  }
+
   // --- Dropdown Logic ---
   var dropdownBtn = document.getElementById('solutions-btn');
   var dropdownMenu = dropdownBtn && dropdownBtn.nextElementSibling;
 
-  if(dropdownBtn && dropdownMenu) {
-    dropdownBtn.addEventListener('click', function(e) {
+  if (dropdownBtn && dropdownMenu) {
+    dropdownBtn.addEventListener('click', function (e) {
       e.preventDefault();
       dropdownMenu.classList.toggle('show');
     });
 
     // Hide dropdown when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
       if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
         dropdownMenu.classList.remove('show');
       }
@@ -25,20 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
     '../assets/HTML Photos/home-images/Client logo/Hotel',
     '../assets/HTML Photos/home-images/Client logo/ISP',
     '../assets/HTML Photos/home-images/Client logo/Public wifi',
-
-
-    
-    
-   
     // Add more folders as needed
   ];
 
   const clientLogoImages = [
-    ['image 2312.png', 'image 2313.png','image 2314.png','image 2315.png','image 2316.png','image 2317.png'], // folder1
-   ['image 2323.png','image 2324.png','image 2325.png','image 2326.png','image 2327.png'],              // folder2
-    ['image 2318.png', 'image 2319.png','image 2320.png','image 2321.png','image 2322.png'],
-    ['image 2304.png', 'image 2305.png','image 2306.png','image 2307.png','image 2308.png','image 2309.png'],
-    ['image 2296.png', 'image 2297.png','image 2298.png','image 2299.png','image 2301.png','image 2303.png'],
+    ['image 2312.png', 'image 2313.png', 'image 2314.png', 'image 2315.png', 'image 2316.png', 'image 2317.png'], // folder1
+    ['image 2323.png', 'image 2324.png', 'image 2325.png', 'image 2326.png', 'image 2327.png'],              // folder2
+    ['image 2318.png', 'image 2319.png', 'image 2320.png', 'image 2321.png', 'image 2322.png'],
+    ['image 2304.png', 'image 2305.png', 'image 2306.png', 'image 2307.png', 'image 2308.png', 'image 2309.png'],
+    ['image 2296.png', 'image 2297.png', 'image 2298.png', 'image 2299.png', 'image 2301.png', 'image 2303.png'],
     ['image 2310.png', 'image 2311.png'],
     // Add more arrays as needed
   ];
@@ -134,8 +168,8 @@ document.addEventListener('DOMContentLoaded', function() {
   startThirdPartyAutoCarousel();
 
   // --- Accordion Logic ---
-  document.querySelectorAll('.benefit-accordion-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
+  document.querySelectorAll('.benefit-accordion-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
       const panel = btn.nextElementSibling;
       const isActive = btn.classList.contains('active');
       // Close all
@@ -214,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // FAQ dropdown logic
   const faqDropdowns = document.querySelectorAll('.faq-dropdown');
   faqDropdowns.forEach(drop => {
-    drop.querySelector('.faq-question').addEventListener('click', function() {
+    drop.querySelector('.faq-question').addEventListener('click', function () {
       console.log('FAQ clicked');
       const isActive = drop.classList.contains('active');
       faqDropdowns.forEach(d => d.classList.remove('active'));
