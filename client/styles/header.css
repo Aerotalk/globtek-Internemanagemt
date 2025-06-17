@@ -1,3 +1,17 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font setup */
+body {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
 .top-info-bar {
   background: #b71c1c;
   color: #fff;
@@ -404,6 +418,7 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 15px;
   width: 34px;
   height: 26px;
   cursor: pointer;
