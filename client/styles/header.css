@@ -239,6 +239,27 @@ body {
   margin-bottom: 40px;
 }
 
+.solution-section {
+  position: relative; /* Establishes a reference for absolute positioning */
+}
+
+.solution-product-img {
+  position: absolute;
+  right: 10%; /* Adjust as necessary to align correctly */
+  top: 35%;
+  transform: translateY(-50%);
+  filter: drop-shadow(
+    0 0 15px rgba(255, 255, 0, 0.8)
+  ); /* Glowing yellow effect */
+  transition: filter 0.3s ease-in-out;
+  max-width: 550px;
+  max-height: 60%;
+}
+
+.solution-product-img:hover {
+  filter: drop-shadow(0 0 25px rgba(255, 255, 0, 1));
+}
+
 .hamburger-menu {
   display: none; /* Hide by default */
 }
@@ -416,6 +437,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .solution-product-img {
+    display: none;
+  }
   .mobile-menu-btn {
     display: block;
     position: absolute;
@@ -624,5 +648,14 @@ body {
   .mobile-dropdown-menu a {
     font-size: 0.98rem;
     padding: 8px 8px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .solution-product-img {
+    display: block;
+    max-height: 50%;
+    top: 30%;
+    right: 5%;
   }
 }
