@@ -645,6 +645,12 @@ body {
   color: #232b39;
 }
 
+.solution-tab-title a {
+  color: #232b39;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .solution-tab-desc {
   font-size: 1.01rem;
   font-weight: 400;
@@ -894,6 +900,23 @@ body {
   display: block;
   margin: 0;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .experience-card-header {
+    padding: 10px 5px 0 5px;
+  }
+  .experience-card-icon img {
+    margin-bottom: 12px;
+    width: 28px;
+    height: 28px;
+  }
+  .experience-card-title {
+    font-size: 1.2rem;
+  }
+  .experience-card-desc {
+    font-size: 0.8rem;
+  }
 }
 
 /* Add gap below the image in the experience card */
@@ -2166,9 +2189,6 @@ body {
   }
 }
 
-/* Add viewport meta tag reminder */
-/* Add this in your HTML head: <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
-
 /* --- HOMEPAGE FULL MOBILE RESPONSIVENESS ENHANCEMENTS --- */
 @media (max-width: 768px) {
   .solution-section,
@@ -2256,11 +2276,17 @@ body {
     max-width: 100%;
     padding: 0 10px;
   }
+  .tech-spec-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
   .tech-spec-image img {
-    width: 100%;
-    max-width: 220px;
-    margin: 0 auto;
     display: block;
+    width: 100%;
+    /* max-width: 220px; */
+    height: 100%;
+    margin: 0 auto;
   }
   .tech-spec-card {
     min-width: 0;
@@ -2293,8 +2319,8 @@ body {
     justify-content: center;
   }
   .benefit-image {
-    max-width: 180px;
-    min-height: unset;
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 576px) {
@@ -2305,10 +2331,36 @@ body {
   .benefit-section {
     padding: 10px 0 !important;
   }
+  .tech-spec-section {
+    margin-top: 16px !important;
+    max-height: fit-content;
+  }
+  .tech-spec-right {
+    padding: 0 14px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .tech-spec-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px 12px !important;
+  }
+  .tech-spec-card-desc {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+  .tech-spec-card-desc ul {
+    font-size: 0.9rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .solution-content,
   .solutions-grid-header,
   .tech-spec-left,
-  .tech-spec-right,
   .benefit-container,
   .experience-cards {
     padding: 0 4px !important;
@@ -2319,6 +2371,7 @@ body {
   .experience-title,
   .benefit-title {
     font-size: 1.2rem !important;
+    font-weight: 700 !important;
   }
   .who-desc,
   .solutions-grid-desc,
@@ -2334,9 +2387,12 @@ body {
   .client-trust-title,
   .solutions-grid-title,
   .tech-spec-title,
-  .experience-title,
-  .benefit-title {
+  .experience-title {
     font-size: 1.1rem !important;
+  }
+  .benefit-title {
+    font-size: 1.6rem !important;
+    margin-bottom: 8px !important;
   }
   .solutions-grid {
     grid-template-columns: 1fr !important;
@@ -2348,14 +2404,16 @@ body {
     padding: 6px 0;
   }
   .tech-spec-image img {
-    max-width: 120px;
+    width: 100%;
   }
   .experience-card {
     max-width: 98vw;
     padding: 8px 2px;
   }
   .benefit-image {
-    max-width: 120px;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
   }
   .footer-section,
   .footer-container {

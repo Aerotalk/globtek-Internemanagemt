@@ -16,12 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
       body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
     });
 
-    // Close mobile menu when clicking on a link
+    // Close mobile menu when clicking on a link (but NOT on .mobile-dropdown-toggle)
     mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (e) => {
+        if (link.classList.contains('mobile-dropdown-toggle')) {
+          // Don't close nav if it's the dropdown toggle
+          return;
+        }
         hamburger.classList.remove('active');
         mobileNav.classList.remove('active');
         body.style.overflow = '';
+        // Also close all mobile dropdowns
+        document.querySelectorAll('.mobile-dropdown').forEach(drop => drop.classList.remove('open'));
       });
     });
 
@@ -34,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburger.classList.remove('active');
         mobileNav.classList.remove('active');
         body.style.overflow = '';
+        // Also close all mobile dropdowns
+        document.querySelectorAll('.mobile-dropdown').forEach(drop => drop.classList.remove('open'));
       }
     });
   }
@@ -55,6 +63,28 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // --- Mobile Dropdown Logic ---
+  document.querySelectorAll('.mobile-dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const parent = this.closest('.mobile-dropdown');
+      // Toggle only this dropdown
+      parent.classList.toggle('open');
+      // Close all other open dropdowns
+      document.querySelectorAll('.mobile-dropdown').forEach(drop => {
+        if (drop !== parent) drop.classList.remove('open');
+      });
+    });
+  });
+
+  // Close mobile dropdowns when clicking outside
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.mobile-dropdown').forEach(drop => {
+      if (!drop.contains(e.target)) drop.classList.remove('open');
+    });
+  });
 
   // --- Client Logo Carousel Logic ---
   const clientLogoFolders = [

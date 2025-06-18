@@ -492,6 +492,8 @@ body {
   padding: 80px 20px 20px;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 
 /* Active state for mobile nav */
@@ -522,4 +524,105 @@ body {
 
 .mobile-nav ul li a:hover {
   color: #b71c1c;
+}
+
+/* Mobile Dropdown Styles */
+.mobile-dropdown {
+  position: relative;
+}
+
+.mobile-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #232b39;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.mobile-dropdown-toggle:after {
+  content: "▼";
+  font-size: 0.9em;
+  margin-left: 8px;
+  color: #b71c1c;
+  transition: transform 0.2s;
+}
+
+.mobile-dropdown.open > .mobile-dropdown-toggle:after {
+  transform: rotate(-180deg);
+}
+
+.mobile-dropdown-menu {
+  display: none;
+  flex-direction: column;
+  background: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 16px rgba(30, 41, 59, 0.08);
+  margin: 0 0 0 12px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mobile-dropdown.open > .mobile-dropdown-menu {
+  display: flex;
+}
+
+.mobile-dropdown-menu li {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.mobile-dropdown-menu a {
+  display: block;
+  color: #232b39;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 18px;
+  text-decoration: none;
+  background: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mobile-dropdown-menu a:hover {
+  background: #f5f5f5;
+  color: #b71c1c;
+}
+
+/* Indent nested dropdown menu */
+.mobile-dropdown-menu {
+  margin-left: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .mobile-nav ul {
+    padding-left: 0;
+  }
+  .mobile-nav ul li {
+    margin: 8px 0;
+  }
+  .mobile-dropdown-menu a {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile-nav {
+    padding: 70px 8px 8px;
+  }
+  .mobile-dropdown-menu a {
+    font-size: 0.98rem;
+    padding: 8px 8px;
+  }
 }
