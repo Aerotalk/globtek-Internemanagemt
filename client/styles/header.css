@@ -639,9 +639,15 @@ body {
     font-size: 1rem;
     padding: 10px 12px;
   }
+  .solution-product-img {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
+  .solution-product-img {
+    display: none;
+  }
   .mobile-nav {
     padding: 70px 8px 8px;
   }
@@ -653,7 +659,6 @@ body {
 
 @media (max-width: 1100px) {
   .solution-product-img {
-    display: block;
     max-height: 50%;
     top: 30%;
     right: 5%;
