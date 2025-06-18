@@ -5,17 +5,33 @@
   box-sizing: border-box;
 }
 
-/* Font setup */
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: #333;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 /* Example: Telcos Solution Section Styling */
 .solution-section {
   background: #f7fafd;
   padding: 60px 0 40px 0;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .solution-content {
@@ -117,6 +133,14 @@ body {
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .telcos-hero-img {
@@ -170,6 +194,14 @@ body {
   align-items: flex-start;
   border-radius: 24px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .problems-left {
@@ -320,6 +352,14 @@ body {
   margin-bottom: 60px;
   margin-left: 40px;
   margin-top: 80px; /* Adjust the value as needed */
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .benefits-left {
@@ -584,11 +624,73 @@ body {
   .telcos-hero-overlay p {
     font-size: 0.9rem;
   }
+  .telcos-problems-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .telcos-benefits-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .testimonial-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .faq-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .clientele-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .hotel-managed-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 /* Testimonial Section */
 .testimonial-section {
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   background: #faf9fa;
   padding: 0 0 48px 0; /* 60px -> 48px */
 
@@ -598,6 +700,14 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .testimonial-container {
@@ -769,7 +879,9 @@ body {
 
 /* FAQ Section Styles */
 .faq-section {
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   background: #fff;
   padding: 0 0 51.2px; /* 64px -> 51.2px */
 
@@ -777,6 +889,14 @@ body {
   justify-content: center;
   position: relative;
   z-index: 10;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .faq-container {
@@ -886,7 +1006,9 @@ body {
 
 /* Clientele Section Styles */
 .clientele-section {
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   background: #fff;
   padding: 64px 0 32px 0;
   display: flex;
@@ -894,6 +1016,14 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 100px; /* Add this line for gap below the section */
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .clientele-label {
@@ -940,11 +1070,21 @@ body {
 
 /* --- Managed Network Solution for Hotel & Resorts Section --- */
 .hotel-managed-section {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   margin: 64px 0 64px 0; /* Top and bottom gap */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .hotel-managed-container {
@@ -1046,6 +1186,64 @@ body {
     gap: 24px;
     padding: 0 10px 20px 10px;
     margin: 40px auto 20px auto;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .telcos-benefits-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .testimonial-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .faq-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .clientele-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .hotel-managed-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .problems-left,
   .problems-right {
@@ -1148,60 +1346,64 @@ body {
   .telcos-problems-section {
     padding: 0 4px 10px 4px;
     margin: 20px auto 10px auto;
-  }
-  .problems-title {
-    font-size: 1rem;
-  }
-  .problems-label {
-    font-size: 0.8rem;
-  }
-  .problems-img {
-    max-width: 100vw;
-    height: auto;
-  }
-  .benefits-label,
-  .benefits-title {
-    font-size: 1rem;
-  }
-  .benefits-form,
-  .benefits-helpbox {
-    padding: 10px 4px;
-    font-size: 0.95rem;
-  }
-  .form-title {
-    font-size: 1.1rem;
-  }
-  .benefits-helpbox {
-    min-height: unset;
-    padding: 10px 4px;
-  }
-  .testimonial-title,
-  .faq-title {
-    font-size: 1.1rem;
-  }
-  .testimonial-desc,
-  .faq-desc {
-    font-size: 0.9rem;
-  }
-  .testimonial-card,
-  .faq-question,
-  .faq-answer {
-    font-size: 0.95rem;
-  }
-  .clientele-title {
-    font-size: 1.1rem;
-  }
-  .clientele-desc {
-    font-size: 0.9rem;
-  }
-  .clientele-img-wrapper {
-    width: 100vw;
-    max-width: 100vw;
-  }
-  .clientele-img {
     width: 100%;
     max-width: 100vw;
-    height: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .telcos-benefits-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .testimonial-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .faq-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .clientele-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .hotel-managed-section {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
