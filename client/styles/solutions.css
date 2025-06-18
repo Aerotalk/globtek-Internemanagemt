@@ -631,8 +631,8 @@ body {
     overflow-x: hidden;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   .telcos-benefits-section {
     width: 100%;
@@ -1352,8 +1352,8 @@ body {
     overflow-x: hidden;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .telcos-benefits-section {
     width: 100%;
@@ -1362,8 +1362,8 @@ body {
     overflow-x: hidden;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .testimonial-section {
     width: 100%;
@@ -1372,8 +1372,8 @@ body {
     overflow-x: hidden;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .faq-section {
     width: 100%;
@@ -1382,8 +1382,8 @@ body {
     overflow-x: hidden;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .clientele-section {
     width: 100%;
@@ -1392,8 +1392,8 @@ body {
     overflow-x: hidden;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .hotel-managed-section {
     width: 100%;
@@ -1402,8 +1402,8 @@ body {
     overflow-x: hidden;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -1576,6 +1576,71 @@ body {
 }
 
 @media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    gap: 24px;
+  }
+
+  .testimonial-left {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .testimonial-label,
+  .testimonial-title,
+  .testimonial-desc,
+  .testimonial-underline {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-slider {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    scroll-snap-type: x none;
+  }
+
+  .testimonial-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding-bottom: 18px;
+  }
+
+  .testimonial-card {
+    min-width: 260px;
+    max-width: 85vw;
+    scroll-snap-align: start;
+  }
+
+  /* Hide scrollbar */
+  .testimonial-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-cards {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .testimonial-right img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
   .solution-section {
     padding: 30px 0 20px 0;
   }
@@ -1603,7 +1668,7 @@ body {
   }
 
   .telcos-hero-overlay h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .telcos-hero-overlay p {
@@ -1695,7 +1760,7 @@ body {
   }
 
   .telcos-hero-overlay h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .telcos-hero-overlay p {

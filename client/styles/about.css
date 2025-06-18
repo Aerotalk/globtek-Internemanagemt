@@ -387,10 +387,10 @@ body {
 @media (max-width: 700px) {
   .flagship-product-container {
     flex-direction: column;
-    gap: 8px;
+    gap: 28px;
     align-items: center;
     transform: none;
-    padding: 0 2vw;
+    /* padding: 0 2vw; */
   }
   .flagship-product-img-col {
     margin-bottom: 8px;
@@ -459,10 +459,10 @@ body {
     min-width: 0;
   }
   .about-card-img-wrap {
-    height: 90px;
+    height: 16rem;
   }
   .about-card-box {
-    padding: 10px 4px 8px 4px;
+    padding: 10px 4px 8px 14px;
     min-height: 80px;
   }
   .about-card-title {

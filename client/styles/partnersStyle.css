@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 60px 0px 40px; /* Increased left and right padding for centering */
+  padding: 0px 10px 0px 10px;
   background: #fff;
   border-bottom: 2px solid #e0e0e0;
 }
@@ -233,6 +233,10 @@ body {
 }
 
 .partner-benefits li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
   font-size: 1.05rem;
   color: #1e1e26;
   margin-bottom: 16px;
